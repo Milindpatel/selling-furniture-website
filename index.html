@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+    <title>Furniture Mart</title>
+  </head>
+  <body>
+        <header id="#">
+            <nav>
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Furniture Mart</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#main">Products</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#contactus">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" onclick="showCart();">Show cart</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <div class="row">
+                <ul class="simplefilter">
+                    <strong>Categories :</strong>
+                    <li class="active" data-filter="all">All</li>
+                    <li data-filter="1">Bed</li>
+                    <li data-filter="2">Chair</li>
+                    <li data-filter="3">Beanbag</li>
+                    <li data-filter="4">Tabel</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="filtr-container" id="filterData">
+                   
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" >
+                        <img class="img-responsive" src="images/bed2.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $15 <br>bed-2 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(1,'bed',15,'bed-2')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" >
+                        <img class="img-responsive" src="images/bed3.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $20 <br>bed-3 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(2,'bed',20,'bed-3')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="1" >
+                        <img class="img-responsive" src="images/bed4.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $25 <br>bed-4 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(3,'bed',25,'bed-4')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" >
+                        <img class="img-responsive" src="images/chair1.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $10 <br>chair-1 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(4,'chair',10,'chair-1')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" >
+                        <img class="img-responsive" src="images/chair2.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $15 <br>chair-2<img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(5,'chair',15,'chair-2')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" >
+                        <img class="img-responsive" src="images/chair3.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $20 <br>chair-3 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(6,'chair',20,'chair-3')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="2" >
+                        <img class="img-responsive" src="images/chair4.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $25 <br>chair-4 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(7,'chair',25,'chair-4')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" >
+                        <img class="img-responsive" src="images/binbag1.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $10 <br>Beanbag-1 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(8,'beanbag',10,'Beanbag-1')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" >
+                        <img class="img-responsive" src="images/binbag2.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $15 <br>Beanbag-2<img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(9,'beanbag',15,'Beanbag-2')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" >
+                        <img class="img-responsive" src="images/binbag3.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $20 <br>Beanbag-3 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(10,'beanbag',20,'Beanbag-3')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="3" >
+                        <img class="img-responsive" src="images/binbag4.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $25 <br>Beanbag-4 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(11,'beanbag',25,'Banbag-4')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" >
+                        <img class="img-responsive" src="images/tabel1.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $10 <br>tabel-1 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(12,'tabel',10,'tabel-1')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" >
+                        <img class="img-responsive" src="images/tabel2.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $15 <br>tabel-2<img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(13,'tabel',15,'tabel-2')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" >
+                        <img class="img-responsive" src="images/tabel3.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $20 <br>tabel-3 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(14,'tabel',20,'tabel-3')"></span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-md-3 filtr-item" data-category="4" >
+                        <img class="img-responsive" src="images/tabel4.jpg" alt="sample image">
+                        
+                        <span class="item-desc">price : $25 <br>tabel-4 <img src="images/shopping-cart.png" title ="add to cart" class="align-right addToCart" onclick="addToCart(15,'tabel',<25></25>,'tabel-4')"></span>
+                    </div>
+                </div>
+            </div>
+                    <div id= "aboutus" class="align-centre">
+                      <center>  <h1>About us</h1>
+        We are selling Best furniture in Canada</center>
+                    </div>
+                    <div id="contactus">
+                      <center>  <h1>Contact us</h1>
+                        <form id="contact_form" name="contact_form" >
+                            <label for="Name">Name: Nirmal Panchal</label><br>
+                            <label for="email">Email:nirmaljpanchal@gmail.com</label><br>
+                            <label for="number">No#.123-456-6677</label><br>
+                            <label for="Name">Name: Milind Patel</label><br>
+                            <label for="email">Email:milindpatel44126@gmail.com</label><br>
+                            <label for="number">No#.456-123-6677</label><br>
+                            <label>&nbsp;</label>
+                </form></center>
+            </div>
+        </main>
+        <footer>
+        </footer>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                       <strong>Your shopping-cart</strong>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;" id="showCart">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>description</th>
+                            <th>#items</th>
+                            <th>Type</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        <tbody id="showCartbody">
+                        
+                        </tbody>
+                    </table>
+                    </div>
+                    <div class="modal-footer" style="padding:35px 50px;">
+                       
+                    <button type="button" id="btnOrder">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModalOrder" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body bg-success" style="padding:40px 50px;" id="showCart">
+                    <strong>Your order is successfully placed.</strong>
+                </div>
+                <div class="modal-footer" style="padding:35px 50px;">
+                </div>
+            </div>
+        </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.filterizr.js"></script>
+    <script type="text/javascript">
+        var addToCartCount=0;
+        var cart=[];
+        function addToCart(id,type,price,desc)
+        {
+            var found=false;
+            var item={
+                "id":id,
+                "type":type,
+                "price":price,
+                "desc":desc,
+                "count":1
+            };  
+            for (var i=0 ; i < cart.length ; i++)
+            {
+                if (cart[i].id == id) {
+                    cart[i].count++;
+                    found=true;
+                }
+            }
+            if(found==false)
+            {
+                cart.push(item);
+            }
+            alert("Item added, click on show cart menu for more detail");
+        }
+        function showCart()
+        {
+            var str="";
+            var sum=0;
+            for (var i=0 ; i < cart.length ; i++)
+            {
+                str+='<tr><td>'+(i+1)+'</td>'
+                    +'<td>'+cart[i].desc+'</td>'
+                    +'<td>'+cart[i].count+'</td>'
+                    +'<td>'+cart[i].type+'</td>'
+                    +'<td>'+cart[i].price+'</td>';
+                    sum = (eval(cart[i].price)*cart[i].count) + eval(sum);
+            }
+            str+='<tr><td colspan=4>Total</td>'
+                    +'<td>'+sum+'</td>';
+            $("#showCartbody").html(str);
+            if(cart.length>0)
+            {
+                 $("#btnOrder").show();
+            }
+            else
+            {
+                $("#btnOrder").hide();
+            }
+            $("#myModal").modal();
+        }
+
+        $(function() {
+            $('.filtr-container').filterizr();
+        });
+        $('.simplefilter li').click(function() {
+            $('.simplefilter li').removeClass('active');
+            $(this).addClass('active');
+        });
+        $("#btnOrder").click(function(){
+            $('#myModal').modal('hide');
+            $("#myModalOrder").modal();
+        });
+        
+    </script>
+  </body>
+</html>

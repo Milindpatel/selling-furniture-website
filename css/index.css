@@ -1,0 +1,50 @@
+body {
+    margin-top: 1rem;
+}
+.addToCart
+{
+	cursor: pointer; 
+}
+.filtr-item {
+    padding: 1rem;
+}
+.item-desc {
+    background-color: #CE3F2E;
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+.simplefilter li {
+    background-color: #4285F4;
+}
+.simplefilter li.active {
+    background-color: #CE3F2E;
+}
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+
+/* Search control */
+.search-row {
+    margin-left: 2.5rem;
+}
+.filtr-search {
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
